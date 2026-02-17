@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formation ODD & Esprit Entrepreneurial</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <div class="hero">
+      <div class="hero-top">
+        <div class="brand">
+          <img src="assets/enactus.jpeg" alt="Enactus ISET Djerba" />
+          <img src="assets/nouvelles-generations.jpeg" alt="Nouvelles Générations" />
+          <div class="title-block">
+            <h1>Formation ODD & Esprit Entrepreneurial</h1>
+            <p>
+              Collaboration <strong>Enactus ISET Djerba</strong> × <strong>Nouvelles Générations</strong><br/>
+              Objectif : sensibiliser aux <strong>ODD</strong>, à l’<strong>entrepreneuriat</strong> et présenter <strong>Enactus</strong>.
+            </p>
+          </div>
+        </div>
+
+        <div class="badges">
+          <div class="badge"><span class="dot teal"></span>ODD</div>
+          <div class="badge"><span class="dot pink"></span>Esprit entrepreneurial</div>
+          <div class="badge"><span class="dot yellow"></span>Collaboration</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <!-- FORM CARD -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Inscription / Contact</h2>
+          <p>Remplis tes informations. Elles seront enregistrées dans Google Sheet (Name, Email, Mobile No).</p>
+        </div>
+
+        <div class="card-body">
+          <form id="form">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" required placeholder="Ex: Amine" />
+              </div>
+
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" required placeholder="ex: name@email.com" />
+              </div>
+
+              <div class="field">
+                <label for="mobile">Mobile No</label>
+                <input id="mobile" required placeholder="Ex: 50405554" />
+              </div>
+            </div>
+
+            <div class="actions">
+              <button class="btn-primary" type="submit">Envoyer</button>
+              <button class="btn-secondary" type="button" id="clearBtn">Effacer</button>
+            </div>
+
+            <div id="msg">Status: prêt ✅</div>
+          </form>
+        </div>
+      </div>
+
+      <!-- INFO CARD -->
+      <div class="card">
+        <div class="card-header">
+          <h2>À propos de la formation</h2>
+          <p>Un atelier animé par Enactus pour les élèves de Nouvelles Générations.</p>
+        </div>
+
+        <div class="side">
+          <h3>Ce que vous allez apprendre</h3>
+          <p>• C’est quoi <strong>Enactus</strong> et comment ça fonctionne (projets, impact, leadership)</p>
+          <p>• Les <strong>ODD</strong> : pourquoi ils comptent et comment agir localement</p>
+          <p>• <strong>Esprit entrepreneurial</strong> : idées, solution, impact, équipe</p>
+
+          <div class="timeline">
+            <div class="step">
+              <div class="num">1</div>
+              <div class="txt">Introduction : Enactus & objectifs de la session</div>
+            </div>
+            <div class="step">
+              <div class="num">2</div>
+              <div class="txt">ODD : exemples concrets + mini activité</div>
+            </div>
+            <div class="step">
+              <div class="num">3</div>
+              <div class="txt">Entrepreneuriat : passer de l’idée à une solution</div>
+            </div>
+          </div>
+
+          <div class="footer">
+            © Collaboration Enactus ISET Djerba × Nouvelles Générations
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById("clearBtn").addEventListener("click", () => {
+      document.getElementById("form").reset();
+      document.getElementById("msg").textContent = "Status: effacé ✅";
+    });
+  </script>
+</body>
+</html>
